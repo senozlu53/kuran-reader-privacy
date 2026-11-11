@@ -14,6 +14,8 @@
 
 html { scroll-behavior: smooth; }
 
+:lang(ko) { word-break: keep-all; }
+
 body {
   margin: 0;
   background:
