@@ -78,7 +78,15 @@
           <strong>Local diagnostics:</strong> the application may keep the last
           20 sync events on your device. Tokens, email addresses, and search
           queries are removed before an event is stored. Diagnostics are not
-          uploaded to us.
+          uploaded automatically.
+        </li>
+        <li>
+          <strong>Error reports (optional):</strong> if you submit the “Report
+          an issue” form, your description, the contact details you choose to
+          provide, any crash information, the selected edition/font step, and
+          the recent sync events (with tokens and personal data removed) are
+          sent to our server and stored there. Submitting a report is never
+          required.
         </li>
       </ul>
       <p>
@@ -115,7 +123,9 @@
         <li>to the cloud provider you choose to connect, so sync can work;</li>
         <li>to Apple or Google when you use their app store or payment services;</li>
         <li>to Google AdMob for non-personalized ads on iOS and Android;</li>
-        <li>to hosting, relay, and security providers that operate the service;</li>
+        <li>to Cloudflare (Cloudflare Workers and D1) for hosting and relay;</li>
+        <li>to Resend for delivering the error-report email;</li>
+        <li>to other hosting, relay, and security providers that operate the service;</li>
         <li>when required by law, legal process, or to protect users and the service.</li>
       </ul>
       <p>
@@ -131,6 +141,7 @@
         <li>Cloud sync data remains in your cloud account until you delete it there or disconnect sync.</li>
         <li>OAuth tokens remain on the device until you disconnect the account, clear app data, or uninstall the app.</li>
         <li>Local diagnostics are limited to the last 20 events and remain on the device until cleared.</li>
+        <li>Error reports you submit are kept for at most 180 days; you can ask us to delete one by quoting its report code.</li>
       </ul>
     </section>
 

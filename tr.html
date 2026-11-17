@@ -76,7 +76,16 @@
         <li>
           <strong>Yerel tanılama:</strong> uygulama cihazda son 20 eşitleme
           olayını tutabilir. Jetonlar, e-posta adresleri ve arama sorguları
-          kaydedilmeden önce temizlenir. Tanılama kayıtları bize yüklenmez.
+          kaydedilmeden önce temizlenir. Tanılama kayıtları kendiliğinden
+          yüklenmez.
+        </li>
+        <li>
+          <strong>Hata bildirimleri (isteğe bağlı):</strong> uygulama içindeki
+          “Sorun bildir” formunu kendiniz gönderirseniz açıklama metniniz,
+          bırakmanız hâlinde iletişim bilginiz, varsa çökme bilgisi, seçili
+          baskı/punto ve son eşitleme olayları (jetonlar ve kişisel veriler
+          temizlenmiş olarak) sunucumuza iletilir ve saklanır. Bildirim
+          göndermek zorunlu değildir.
         </li>
       </ul>
       <p>
@@ -114,7 +123,9 @@
         <li>eşitlemenin çalışması için bağlanmayı seçtiğiniz bulut sağlayıcısıyla;</li>
         <li>mağaza veya ödeme hizmetlerini kullandığınızda Apple veya Google ile;</li>
         <li>iOS ve Android’de kişiselleştirilmemiş reklamlar için Google AdMob ile;</li>
-        <li>hizmeti çalıştıran barındırma, relay ve güvenlik sağlayıcılarıyla;</li>
+        <li>barındırma ve relay için Cloudflare (Cloudflare Workers ve D1) ile;</li>
+        <li>hata bildirimi e-postasının iletilmesi için Resend ile;</li>
+        <li>hizmeti çalıştıran diğer barındırma, relay ve güvenlik sağlayıcılarıyla;</li>
         <li>yasa, yasal süreç veya kullanıcıların ve hizmetin güvenliği için gerekli olduğunda yetkili mercilerle</li>
       </ul>
       <p>
@@ -130,6 +141,7 @@
         <li>Bulut eşitleme verileri, siz silene veya eşitlemeyi kapatana kadar bulut hesabınızda kalır.</li>
         <li>OAuth jetonları, hesabın bağlantısını kesene, uygulama verilerini temizleyene veya uygulamayı kaldırana kadar cihazda kalır.</li>
         <li>Yerel tanılama kayıtları son 20 olayla sınırlıdır ve temizlenene kadar cihazda kalır.</li>
+        <li>Gönderdiğiniz hata bildirimleri en fazla 180 gün saklanır; bildirim kodunu belirterek silinmesini isteyebilirsiniz.</li>
       </ul>
     </section>
 
